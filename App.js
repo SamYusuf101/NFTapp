@@ -5,6 +5,7 @@ import { useFonts, Usefonts } from 'expo-font';
 import Home from './Screens/Home';
 import Details from './Screens/Details';
 
+
 const Stack = createStackNavigator();
 
 const theme = {
@@ -33,7 +34,7 @@ const App = () => {
     <NavigationContainer theme={theme}>
       <Stack.Navigator screenOptions={{ hearderShown: 'false' }} initialRouteName="Home">
         <Stack.Screen options={{ headerShown: false }} name="Home" component={Home} />
-        <Stack.Screen name="Details" component={Details} />
+        <Stack.Screen options={{ headerShown: false }} name="Details" component={Details} />
 
       </Stack.Navigator>
     </NavigationContainer>
