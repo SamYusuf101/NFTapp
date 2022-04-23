@@ -5,9 +5,9 @@ import { SIZES, COLORS, SHADOWS, FONTS, assets } from '../constants'
 export const NFTTitle = ({ title, subTitle, titleSize, subTitleSize}) => {
     return(
         <View>
-        <Text style={{fontFamily: FONTS.semiBold, fontSize:titleSize,
+        <Text style={{fontSize:titleSize,
         color:COLORS.primary}}>{title}</Text>
-        <Text style={{fontFamily: FONTS.regular, fontSize:subTitleSize,
+        <Text style={{fontSize:subTitleSize,
         color:COLORS.primary}}>{subTitle}</Text>
         </View>
     )
@@ -22,6 +22,11 @@ export const EthPrice = ({price}) => {
         resizeMode='contain'
         style={{width:20, height:20, marginRight:2}}
         />
+        <Text style={{
+            fontSize: SIZES.font,
+            color: COLORS.primary
+        }}>{price}
+        </Text>
         </View>
     )
 

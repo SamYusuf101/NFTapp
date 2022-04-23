@@ -2,9 +2,9 @@ import { View, Text, Image } from 'react-native'
 import React from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { COLORS, SIZES, SHADOWS, assets } from '../constants';
-import { CircleButton, rectButton } from './button';
+import { CircleButton, RectButton } from './button';
 import { SubInfo, EthPrice, NFTTitle } from './SubInfo';
-import { RectButton } from 'react-native-gesture-handler';
+
 
 const NFTcard = ({data}) => {
 
@@ -48,7 +48,11 @@ const NFTcard = ({data}) => {
     alignItems:"center"
     }}>
     <EthPrice price={data.price}/>
-    <RectButton />
+    <RectButton
+      minWidth={120}
+      fontSize={SIZES.font}
+      handlePress={() => navigation("Details", {data})}
+    />
     
     </View>
     </View>

@@ -30,11 +30,27 @@ export const CircleButton = ({imgUrl, handlePress, ...props}) => {
   );
 };
 
-export const rectButton = () => {
+export const RectButton = ({ minWidth, fontSize, handlePress, ...props}) => {
     return (
-      <View>
-        <Text>button</Text>
-      </View>
-    );
+      <TouchableOpacity
+    style={{  
+        backgroundColor: COLORS.primary,   
+        borderRadius: SIZES.extraLarge,
+        minWidth: minWidth,
+        padding: SIZES.small,
+        ...props
+    }}
+    onPress={handlePress}
+    > 
+    <Text 
+    style={{
+      fontSize:fontSize, 
+      fontWeight:'bold', 
+      color: COLORS.white, textAlign:'center'
+    }}>Place a bid</Text>
+   
+    
+    </TouchableOpacity>
+  );
   };
 
