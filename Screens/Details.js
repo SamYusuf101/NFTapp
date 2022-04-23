@@ -6,7 +6,7 @@ const Details = () => {
   return (
     <SafeAreaView>
       <Text>Details</Text>
-      </SafeAreaView>
+    </SafeAreaView>
   )
 }
 

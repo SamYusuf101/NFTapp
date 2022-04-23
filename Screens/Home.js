@@ -1,4 +1,4 @@
-import React, { useState}from 'react';
+import React, { useState } from 'react';
 import { View, Text, FlatList, } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { COLORS, NFTData } from '../constants';
@@ -12,7 +12,7 @@ const Home = () => {
                 <View style={{ zIndex: 0 }}>
                     <FlatList
                         data={NFTData}
-                        renderItem={({ item }) => <NFTcard data={item}/>}
+                        renderItem={({ item }) => <NFTcard data={item} />}
                         keyExtractor={(item) => item.id}
                         showsVerticalScrollIndicator={false}
                         ListHeaderComponent={<HomeHeader />}
@@ -26,11 +26,11 @@ const Home = () => {
                     right: 0,
                     left: 0,
                     zIndex: -1,
-                    
+
                 }}>
 
-                <View style= {{ height:300, backgroundColor: COLORS.primary}}/>
-                <View style= {{flex:1, backgroundColor: 'COLORS.white'}}/>
+                    <View style={{ height: 300, backgroundColor: COLORS.primary }} />
+                    <View style={{ flex: 1, backgroundColor: 'COLORS.white' }} />
 
                 </View>
 
