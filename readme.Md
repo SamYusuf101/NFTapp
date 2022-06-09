@@ -1,12 +1,13 @@
 # Project Description
 
-This cross-platform mobile application lets you see the current crypto price in real time and lets you track your crypto assets in your portfolio.
+This is a professional landing page of an NFT marketplace app. This Front-End react native app contains two pages. One to show available NFT's and an option to place a bid. The other page dispalys the details of the NFT and also shows current bids.  
 This app is optimized for different screen sizes and orientations.
 
 #Installation
 
 Please set up a React Native development environment if you have not already done so.
-You will also need to install react-native-wagmi-charts for crypto charts.
+You will also need to install react native navigation. 
+"npm install @react-navigation/native"
 
 
 # Running iOS on a Mac via a simulator
@@ -28,7 +29,7 @@ npm react-native run-android
 
 # Screenshots
 
-![Crypto list](assets/images/nft.png)
+![Nft ](assets/images/nft.png)
 
 
 # Ideas for Future Development
