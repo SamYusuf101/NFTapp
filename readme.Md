@@ -29,7 +29,7 @@ npm react-native run-android
 
 # Screenshots
 
-![Nft ](assets/images/nft.png)
+![n ](assets/images/nft.png)
 
 
 # Ideas for Future Development
