@@ -3,7 +3,7 @@
 This is a professional landing page of an NFT marketplace app. This Front-End react native app contains two pages. One to show available NFT's and an option to place a bid. The other page dispalys the details of the NFT and also shows current bids.  
 This app is optimized for different screen sizes and orientations.
 
-#Installation
+# Installation
 
 Please set up a React Native development environment if you have not already done so.
 You will also need to install react native navigation. 
