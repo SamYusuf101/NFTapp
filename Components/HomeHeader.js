@@ -30,7 +30,7 @@ const HomeHeader = ({ onSearch }) => {
             style={{
               position: 'absolute',
               width: 15,
-              height: 15,
+              height: 16,
               bottom: 0,
               right: 0
             }}
